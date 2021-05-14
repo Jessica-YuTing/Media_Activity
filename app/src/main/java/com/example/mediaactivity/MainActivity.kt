@@ -2,6 +2,7 @@ package com.example.mediaactivity
 
 import android.content.pm.ActivityInfo
 import android.media.MediaPlayer
+import android.net.Uri
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -57,6 +58,13 @@ class MainActivity : AppCompatActivity() {
                 mper = MediaPlayer.create(this, R.raw.fly)
                 mper.start()
             }
+            R.id.btn3 -> {
+                //vdv.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.love))
+                vdv.setVideoPath("http://www.ebookfrenzy.com/android_book/movie.mp4")
+
+                vdv.start()
+            }
+
         }
     }
     override fun onDestroy() {

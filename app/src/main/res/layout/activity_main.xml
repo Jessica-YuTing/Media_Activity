@@ -49,6 +49,10 @@
         android:layout_height="625dp"
         android:layout_weight="1" />
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
 </LinearLayout>
 
 
